@@ -1,10 +1,13 @@
 import Image from "next/image";
 import hamburger from "../../public/assets/shared/icon-hamburger.svg";
+import { useSpaceTourismContext } from "../../context";
 
 const SpaceTourismMenu = () => {
+
+    const { hideMenu } = useSpaceTourismContext();
 	return (
 		<>
-			<div className="hamburger_menu">
+			<div className="hamburger_menu" onClick={hideMenu}>
 				<Image src={hamburger} alt="hamburger-menu" />
 			</div>
 			<style jsx>{`
