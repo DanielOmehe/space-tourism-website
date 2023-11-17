@@ -35,7 +35,7 @@ const SpaceTourismMobileMenu = () => {
 						backdrop-filter: blur(15px);
 						position: absolute;
 						top: 0;
-						right: -304px;
+						right: 304px;
 						display: block;
 						opacity: 1;
 						z-index: 2;
