@@ -1,5 +1,5 @@
 import "../public/styles/app.css";
-import SpaceTourismNavbar from "../components/navbar";
+import SpaceTourismNavbar from "../components/shared";
 import SpaceTourismProvider from "../context";
 
 const SpaceTourismWebsite = ({ Component, pageProps }) => {

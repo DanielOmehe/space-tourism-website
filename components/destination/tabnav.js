@@ -7,7 +7,7 @@ const SpaceTourismTabNav = () => {
 		<>
 			<ul className="space-tourism-tab-nav">
 				{destinations.map(({ name }) => (
-					<li className={name === currentDestination ? 'active' : ''} onClick={() => getCurrentDestination(name)}>{name}</li>
+					<li key={name} className={name === currentDestination ? 'active' : ''} onClick={() => getCurrentDestination(name)}>{name}</li>
 				))}
 			</ul>
 			<style jsx>{`
@@ -29,10 +29,15 @@ const SpaceTourismTabNav = () => {
                     margin: 0 35px;
 					letter-spacing: 2.7px;
                     cursor: pointer;
+                    padding: 12px 0;
 				}
 
+                li:hover{
+                    border-bottom: 2px solid #fff;
+                    opacity: .5;
+                }
+
 				li.active {
-                    padding: 12px 0;
 					list-style: none;
                     cursor: pointer;
 					color: #fff;

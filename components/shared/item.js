@@ -21,6 +21,7 @@ const SpaceTourismNavItem = ({ children, indx, path, route }) => {
 
 				.space_tourism_nav_item:hover {
                     border-bottom: 2px solid #fff;
+                    opacity: .5;
 				}
 
 				.space_tourism_nav_item.active{

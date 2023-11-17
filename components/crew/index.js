@@ -1,10 +1,13 @@
+import SpaceTourismCrewContent from './main'
+
 const SpaceTourismCrewPage =()=>{
     return (
         <>
         <header className='space-tourism-crew-page'>
+            <SpaceTourismCrewContent />
         </header>
         <style jsx>{`
-            .space-tourism-Crew-page{
+            .space-tourism-crew-page{
                 width: 100%;
                 height: 100vh;
                 background-image: url('assets/crew/background-crew-desktop.jpg');
