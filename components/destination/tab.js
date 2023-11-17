@@ -83,6 +83,12 @@ const SpaceTourismTab = ({ destination }) => {
                     font-size: 28px;
                     font-weight: 400;
 				}
+
+                @media only screen and (max-width: 800px){
+                    .space-tourism-tab{
+                        grid-template-columns: 1fr;
+                    }
+                }
 			`}</style>
 		</>
 	);

@@ -1,4 +1,4 @@
-import SpaceTourismMobileMenu from '../navbar/menu'
+import SpaceTourismMobileMenu from '../shared/menu'
 import SpaceTourismLandingContent from './main'
 
 const SpaceTourismLandingPage =()=>{

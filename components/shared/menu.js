@@ -13,7 +13,7 @@ const SpaceTourismMobileMenu = () => {
 				<Close />
 				<ul>
 					{links.map(({ name, route }, indx) => (
-						<li className={pathname === route ? 'route active' : 'route'}>
+						<li key={name} className={pathname === route ? 'route active' : 'route'}>
 							<p className="indx">{`0${indx}`}</p>
 							<Link href={route} key={name}>
 								{name}
