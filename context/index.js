@@ -14,8 +14,10 @@ const SpaceTourismProvider = ({ children }) => {
 	const [currentDestination, setCurrentDestination] = useState(
 		destinations[0].name
 	);
-	const [technologies, setTechnologies] = useState(data.technologies);
+	const [technologies, setTechnologies] = useState(data.technology);
+	const [techIndx, setTechIndx] = useState(0);
 
+    const getTechIndx =(indx)=> setTechIndx(techIndx => indx);
 	const getCurrentDestination = (name) =>
 		setCurrentDestination((currentDestination) => name);
 	const getCrewIndx = (indx) => setCrewIndx((crewIndx) => indx);
@@ -36,7 +38,9 @@ const SpaceTourismProvider = ({ children }) => {
 				currentDestination,
 				getCurrentDestination,
                 crewIndx,
-                getCrewIndx
+                getCrewIndx,
+                techIndx,
+                getTechIndx
 			}}
 		>
 			{children}
